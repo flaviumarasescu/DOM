@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Dom</h1>
+      </div>
+      <div class="row">
+        <article class="col">
+          <button data-button="decrement" class="btn btn-danger">-</button>
+          <span data-counter-display>0</span>
+          <button data-button="increment" class="btn btn-success">+</button>
+        </article>
+      </div>
+      <div class="row">
+        <article class="col">
+          <form action="" data-bmi-form>
+            <p>
+              <label for="greutate">Greutate</label>
+              <input type="number" name="greutate" id="greutate" />
+            </p>
+            <p>
+              <label for="inaltime">Inaltime</label>
+              <input step="0.01" type="number" name="inaltime" id="inaltime" />
+            </p>
+            <p>
+              <button type="submit">Calculeaza</button>
+            </p>
+            <p data-bmi-display></p>
+          </form>
+        </article>
+      </div>
+
+      <article onclick="alert('eroare')" data-movies class="row"></article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
